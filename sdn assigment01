@@ -1,0 +1,524 @@
+ubuntu@sdnhubvm:~[09:12]$ sudo mn --topo single,3 --mac --switch ovsk,protocols=OpenFlow13 --controller remote
+*** Creating network
+*** Adding controller
+Unable to contact the remote controller at 127.0.0.1:6633
+*** Adding hosts:
+h1 h2 h3 
+*** Adding switches:
+s1 
+*** Adding links:
+(h1, s1) (h2, s1) (h3, s1) 
+*** Configuring hosts
+h1 h2 h3 
+*** Starting controller
+c0 
+*** Starting 1 switches
+s1 ...
+*** Starting CLI:
+mininet> h1 ping h2
+^Z
+[1]+  Stopped                 sudo mn --topo single,3 --mac --switch ovsk,protocols=OpenFlow13 --controller remote
+ubuntu@sdnhubvm:~[09:13]$ feature:install sdnhub-tutorial-learning-switch
+feature:install: command not found
+ubuntu@sdnhubvm:~[09:16]$ history
+    4  clear
+    5  git diff
+    6  cd
+    7  cd onos/
+    8  git diff
+    9  vi tools/dev/onos.cshrc
+   10  vi tools/dev/onos.cshrc
+   11  git diff
+   12  vi tools/dev/onos.cshrc
+   13  vi tools/dev/onos.cshrc
+   14  vi tools/dev/onos.cshrc
+   15  git diff
+   16  cd
+   17  cd floodlight/
+   18  git branch
+   19  clear
+   20  exit
+   21  cd SDNHub_Opendaylight_Tutorial/
+   22  ls
+   23  git diff
+   24  git commit -a
+   25  git push
+   26  clear
+   27  git log
+   28  clear
+   29  exit
+   30  ls
+   31  sudo apt-get clean
+   32  sudo apt-get purge
+   33  sudo apt-get autoclean
+   34  clear
+   35  exit
+   36  git pull --rebase
+   37  cd SDNHub_Opendaylight_Tutorial/
+   38  git pull --rebase
+   39  exit
+   40  df -h
+   41  cd 
+   42  sudo find / -size +100M
+   43  sudo find / -size +100M
+   44  exit
+   45  cd SDNHub_Opendaylight_Tutorial/
+   46  ls
+   47  ls
+   48  cd run-location
+   49  ls
+   50  ./bin/karaf 
+   51  clear
+   52  cd
+   53  ryu-manager
+   54  cd ryu/
+   55  find . -name ryu-manager
+   56  ./bin/ryu-manager
+   57  sudo pip install oslo_config
+   58  sudo pip install oslo.config
+   59  ./bin/ryu-manager
+   60  sudo apt-cache search oslo | grep config
+   61  sudo apt-get install python-oslo.config
+   62  ./bin/ryu-manager
+   63  git diff
+   64  git log
+   65  vi ./bin/ryu-manager
+   66  ./bin/ryu-manager
+   67  sudo apt-get install python-oslo python-netaddr
+   68  sudo apt-get install python-oslo
+   69  sudo apt-cache search oslo 
+   70  python
+   71  sudo apt-get update
+   72  sudo  apt-get install python-pip python-dev libxml2-dev libxslt-dev zlib1g-dev
+   73  clear
+   74  ./bin/ryu-manager
+   75  sudo pip install oslo.config
+   76  sudo pip install --upgrade oslo.config
+   77  clear
+   78  ./bin/ryu-manager
+   79  clear
+   80  history
+   81  clear
+   82  cd
+   83  scp srini@yuba.stanford.edu:1.patch .
+   84  sudo dhclient eht0
+   85  sudo dhclient eth0
+   86  scp srini@yuba.stanford.edu:1.patch .
+   87  cd SDNHub_Opendaylight_Tutorial/
+   88  git apply ../1.patch 
+   89  rm -rf ~/.m2/repository/
+   90  mvn clean install -nsu
+   91  cd run-location
+   92  ./bin/karaf
+   93  rm -rf journal/ data/ snapshots/
+   94  cd
+   95  ls
+   96  rm 1.patch 
+   97  df -h
+   98  sudo find / -size +50M
+   99  sudo find / -size +50M -name *packaging*
+  100  rm `sudo find / -size +50M -name *packaging*`
+  101  df -h
+  102  clear
+  103  sudo reboot
+  104  sudo mn  --topo single,3 --mac --switch ovsk,protocols=OpenFlow13 --controller remote
+  105  sudo ovs-ofctl dump-flows s1 -OOpenFlow13
+  106  cd SDNHub_Opendaylight_Tutorial/
+  107  git reset --hard HEAD
+  108  git pull --rebase
+  109  git log
+  110  clear
+  111  cd
+  112  sudo apt-get autoremove
+  113  sudo apt-get clean
+  114  sudo apt-get purge
+  115  exit
+  116  cd tools/
+  117  cd dev/
+  118  ls
+  119  diff /tmp/bash_profile .
+  120  diff -b /tmp/bash_profile .
+  121  clear
+  122  diff -b /tmp/bash_profile .
+  123  mvn --version
+  124  cd ..
+  125  cd ..
+  126  ls
+  127  rm -fr apache-karaf-3.0.2/
+  128  git diff
+  129  wget http://www.apache.org/dyn/closer.cgi/karaf/3.0.3/apache-karaf-3.0.3.zip
+  130  unzip apache-karaf-3.0.3.zip 
+  131  rm apache-karaf-3.0.3.zip 
+  132  wget http://apache.mirrors.ionfish.org/karaf/3.0.3/apache-karaf-3.0.3.zip
+  133  unzip apache-karaf-3.0.3.zip 
+  134  rm apache-karaf-3.0.3.zip 
+  135  exit
+  136  rm -rf ~/.m2/repository/
+  137  cd SDNHub_Opendaylight_Tutorial/
+  138  git diff
+  139  git pull --rebase
+  140  clear
+  141  mvn clean install -nsu
+  142  clear
+  143  exit
+  144  cd 
+  145  cd SDNHub_Opendaylight_Tutorial/
+  146  git diff
+  147  git stash
+  148  git pull --rebase
+  149  git stash apply
+  150  clear
+  151  sudo dhclient eth0
+  152  clear
+  153  df -h
+  154  clear
+  155  df -h
+  156  clear
+  157  sudo find / -size +100M
+  158  clear
+  159  df -h
+  160  sudo find / -size +100M
+  161  rm "/home/ubuntu/.m2/repository/org/sdnhub/odl/tutorial/distribution/packaging/1.0.0-SNAPSHOT/packaging-1.0.0-SNAPSHOT.tar.gz
+  162  /home/ubuntu/.m2/repository/org/sdnhub/odl/tutorial/distribution/packaging/1.0.0-SNAPSHOT/packaging-1.0.0-SNAPSHOT.zip
+  163  /home/ubuntu/SDNHub_Opendaylight_Tutorial/distribution/opendaylight-karaf/target/packaging-1.0.0-SNAPSHOT.tar.gz
+  164  /home/ubuntu/SDNHub_Opendaylight_Tutorial/distribution/opendaylight-karaf/target/packaging-1.0.0-SNAPSHOT.zip
+  165  "
+  166  rm "/home/ubuntu/.m2/repository/org/sdnhub/odl/tutorial/distribution/packaging/1.0.0-SNAPSHOT/packaging-1.0.0-SNAPSHOT.tar.gz
+  167  /home/ubuntu/.m2/repository/org/sdnhub/odl/tutorial/distribution/packaging/1.0.0-SNAPSHOT/packaging-1.0.0-SNAPSHOT.zip
+  168  /home/ubuntu/SDNHub_Opendaylight_Tutorial/distribution/opendaylight-karaf/target/packaging-1.0.0-SNAPSHOT.tar.gz
+  169  /home/ubuntu/SDNHub_Opendaylight_Tutorial/distribution/opendaylight-karaf/target/packaging-1.0.0-SNAPSHOT.zip"
+  170  sudo find / -size +100M -name packaging*
+  171  rm `sudo find / -size +100M -name packaging*`
+  172  df -h
+  173  clear
+  174  cd run-location
+  175  ./bin/karaf 
+  176  rm -rf journal/ data/ snapshots/
+  177  exit
+  178  cd tools/dev/
+  179  diff bash_profile /tmp/
+  180  cd
+  181  ls
+  182  cd apache-maven-3.3.3/
+  183  ls
+  184  cd ..
+  185  cd onos/tools/dev/
+  186  diff bash_profile /tmp/
+  187  vi bash_profile 
+  188  diff bash_profile /tmp/
+  189  clear
+  190  diff bash_profile /tmp/
+  191  vi bash_profile 
+  192  diff bash_profile /tmp/
+  193  vi bash_profile 
+  194  diff bash_profile /tmp/
+  195  diff /tmp/onos.cshrc .
+  196  vi onos.cshrc 
+  197  diff /tmp/onos.cshrc .
+  198  ls
+  199  clear
+  200  df -h
+  201  clear
+  202  cd
+  203  cd SDNHub_Opendaylight_Tutorial/
+  204  vi commons/parent/pom.xml 
+  205  git diff
+  206  mvn clean install -nsu
+  207  rm -rf ~/.m2/repository/
+  208  rm -rf ~/.m2/repository/
+  209  mvn clean install -nsu
+  210  mvn clean install -nsu
+  211  clear
+  212  vi run-location/etc/org.apache.karaf.features.cfg 
+  213  du -h .
+  214  clear
+  215  du -h .
+  216  clear
+  217  cd run-location
+  218  ls
+  219  cd ..
+  220  clear
+  221  exit
+  222  df -h
+  223  cd
+  224  cd onos/
+  225  git log
+  226  git diff
+  227  git stash
+  228  git diff
+  229  cp tools/dev/bash_profile /tmp/
+  230  cp tools/dev/onos.cshrc /tmp/
+  231  git reset --hard HEAD
+  232  git pull --rebase
+  233  git branch
+  234  git branch -d onos-1.0
+  235  git branch -D onos-1.0
+  236  git checkout -b onos-1.2.1 origin/1.2.1
+  237  git branch -a
+  238  git checkout -b onos-1.2.1 1.2.1
+  239  git log
+  240  git checkout master
+  241  git branch
+  242  git branch -d onos-1.2.1
+  243  git branch -D onos-1.2.1
+  244  git branch
+  245  git log
+  246  ls
+  247  mvn clean install -nsu
+  248  mvn clean install -nsu
+  249  source tools/dev/bash_profile 
+  250  source tools/dev/onos.cshrc 
+  251  vi tools/dev/onos.cshrc 
+  252  vi tools/dev/onos.cshrc 
+  253  mvn clean install -nsu
+  254  mvn clean install -nsu
+  255  ls
+  256  source ./tools/dev/bash_profile 
+  257  karaf
+  258  echo $KARAF_ROOT
+  259  echo $PATH
+  260  vi ~/.bashrc
+  261  git diff
+  262  vi tools/dev/bash_profile 
+  263  git diff
+  264  source ./tools/dev/bash_profile 
+  265  echo $PATH
+  266  vi tools/dev/bash_profile 
+  267  diff tools/dev/bash_profile /tmp/
+  268  vi tools/dev/bash_profile 
+  269  cd
+  270  sudo mn  --topo single,3 --mac --switch ovsk,protocols=OpenFlow13 --controller remote
+  271  clear
+  272  cd onos/
+  273  karaf
+  274  karaf
+  275  exit
+  276  echo $PATH
+  277  echo $PATH
+  278  du -h .rvm
+  279  du -h ~/.rvm
+  280  du -h ~/.rnd 
+  281  source tools/dev/bash_profile 
+  282  echo $PATH
+  283  karaf
+  284  set
+  285  echo $KARAF_ROOT
+  286  echo $ONOS_ROOR
+  287  echo $ONOS_ROOT
+  288  echo $PATH
+  289  echo $JAVA_HOME
+  290  ls
+  291  cd apache-karaf-3.0.3/
+  292  ls
+  293  cd etc/
+  294  ls
+  295  ls -lt
+  296  cd ..
+  297  ls
+  298  ls -lt
+  299  cd ..
+  300  source tools/dev/bash_profile 
+  301  mvn clean install -nsu
+  302   mvn clean install -nsu -DskipIT -DskipTests
+  303  karaf clean
+  304  diff tools/dev/onos.cshrc /tmp/
+  305  git diff
+  306  echo $JAVA_HOME
+  307  ;s
+  308  ls
+  309  cd apache-karaf-3.0.3/
+  310  ls
+  311  ls -lt
+  312  find . -name *.jar
+  313  find . -name *.jar | grep onos
+  314  cd ..
+  315  find . -name *.jar | grep onos
+  316  cd apache-karaf-3.0.3/
+  317  ls
+  318  cd system/
+  319  ls
+  320  cd org
+  321  ls
+  322  cd ..
+  323  cd ..
+  324  ls
+  325  cd ..
+  326  vi pom.xml 
+  327  less README.md 
+  328  ok clean
+  329  fg
+  330  ls
+  331  cd ap
+  332  cd apache-karaf-3.0.3/
+  333  ls -lt
+  334  rm -rf data/
+  335  cd ..
+  336  echo $ONOS_APPS
+  337  which ok
+  338  ls
+  339  find . -name ok
+  340  find / -nameok 
+  341  find / -name ok 
+  342  sudo find / -name ok 
+  343  sudo find / -name ok.sh
+  344  sudo find / -name ok.py
+  345  sudo find / -name ok*
+  346  set | grep ok
+  347  alias
+  348  which onos-karaf
+  349  vi /home/ubuntu/onos/tools/dev/bin/onos-karaf
+  350  vi /home/ubuntu/onos/tools/dev/bin/onos-setup-karaf
+  351  onos-karaf 
+  352  git diff
+  353  git diff
+  354  git diff ap
+  355  git diff apps/
+  356  git checkout apps
+  357  git diff
+  358  clear
+  359  git diff
+  360  onos-karaf
+  361  git diff
+  362  git checkout apps
+  363  cd
+  364  onos-karaf
+  365  cd onos/
+  366  git diff
+  367  onos-karaf
+  368  git diff
+  369  git checkout apps
+  370  git diff
+  371  onos-karaf
+  372  fg
+  373  git checkout apps
+  374  kara
+  375  f
+  376  onos-setup-karaf 
+  377  vi apache-karaf-3.0.3/etc/org.apache.karaf.features.cfg
+  378  karaf
+  379  git diff
+  380  git checkout apps
+  381  karaf
+  382  git diff
+  383  clear
+  384  karaf
+  385  fg
+  386  vi `find . -name onos-karaf-setup`
+  387  vi `find . -name onos-setup-karaf`
+  388  git branch
+  389  git branch -a
+  390  vi `find . -name onos-karaf-setup`
+  391  vi `find . -name onos-setuo-karaf`
+  392  vi `find . -name onos-setup-karaf`
+  393  du -h apache-karaf-3.0.3/
+  394  ls
+  395  git branch
+  396  git branch -a
+  397  git checkout -b onos-1.1 origin/onos-1.1
+  398  git diff
+  399  clear
+  400  vi apache-karaf-3.0.3/etc/org.apache.karaf.features.cfg
+  401  df -h
+  402  exit
+  403  cd SDNHub_Opendaylight_Tutorial/run-location
+  404  ./bin/karaf 
+  405  rm -rf journal/ data/ snapshots/
+  406  exit
+  407  sudo mn  --topo single,3 --mac --switch ovsk,protocols=OpenFlow13 --controller remote
+  408  clear
+  409  exit
+  410  cd SDNHub_Opendaylight_Tutorial/
+  411  git diff
+  412  git commit -a
+  413  git push
+  414  git pull --rebase
+  415  git push
+  416  clear
+  417  exit
+  418  df -h
+  419  exit
+  420  wget -qO- https://get.docker.com/gpg | sudo apt-key add -
+  421   wget -qO- https://get.docker.com/ | sudo sh
+  422  sudo usermod -aG docker ubuntu
+  423  clear
+  424  sudo find / -size +100M 
+  425  sudo apt-get clean purge
+  426  df -h
+  427  sudo find / -size +100M 
+  428  rm /var/cache/oracle-jdk8-installer/jdk-8u60-linux-x64.tar.gz
+  429  sudo rm /var/cache/oracle-jdk8-installer/jdk-8u60-linux-x64.tar.gz
+  430  clear
+  431  df -h
+  432  sudo apt-get clean
+  433  sudo apt-get purge
+  434  rm `sudo find / -size +100M -name packaging*`
+  435  df -h
+  436  sudo mn  --topo single,3 --mac --switch ovsk,protocols=OpenFlow13 --controller remote
+  437  clear
+  438  df -h
+  439  exit
+  440  cd SDNHub_Opendaylight_Tutorial/
+  441  git pull --rebase
+  442  df -h
+  443  sudo docker pull sdnhub/netopeer
+  444  clear
+  445  sudo apt-get update
+  446  sudo apt-get upgrade
+  447  mvn clean install
+  448  cd run-location
+  449  ls
+  450  ./bin/karaf 
+  451  rm -rf journal/ data/ snapshots/
+  452  clear
+  453  exit
+  454  cd Opendaylight_Tutorial
+  455  cd SDNHub_ Opendaylight_Tutorial
+  456  cd SDNHub_Opendaylight_Tutorial
+  457  git pull --rebase
+  458  mvn install -nsu
+  459  wget -q -O - https://raw.githubusercontent.com/opendaylight/odlparent/master/settings.xml > ~/.m2/settings.xml       
+  460  mvn clean install -nsu
+  461  ~/SDNHub_Opendaylight_Tutorial$ cd distribution/opendaylight-karaf/target/assembly
+  462  cd distribution/opendaylight-karaf/target/assembly
+  463  ./bin/karaf 
+  464  ./bin/karafcd ..
+  465  cd..
+  466  cd..
+  467  cd..
+  468  sudo mn --topo single,3 --mac --switch ovsk,protocols=OpenFlow13 --controller remote
+  469  cd..
+  470  feature:install sdnhub-tutorial-learning-switch
+  471  feature:install sdnhub-tutorial-learning-switch
+  472  cd distribution/opendaylight-karaf/target/assembly
+  473  feature:install sdnhub-tutorial-learning-switch
+  474  pwd
+  475  cat features/src/main/resources/feature.xml
+  476  ./bin/karaf 
+  477  ./bin/karaf 
+  478  exit
+  479  ./bin/karaf 
+  480  netstat -an
+  481  cat features/src/main/resources/feature.xml
+  482   sudo mn --topo single,3 --mac --switch ovsk,protocols=OpenFlow13 --controller remote
+  483  cd mininet
+  484  ~/SDNHub_Opendaylight_Tutorial/distribution/opendaylight-karaf/target/assembly[13:43] (master)$ ./bin/karaf
+  485  ~/SDNHub_Opendaylight_Tutorial/distribution/opendaylight-karaf/target/assembly/ ./bin/karaf
+  486  ~/SDNHub_Opendaylight_Tutorial/distribution/opendaylight-karaf/target/assembly/ ./bin/karaf
+  487  ~/SDNHub_Opendaylight_Tutorial/distribution/opendaylight-karaf/target/assembly
+  488  cd ~/SDNHub_Opendaylight_Tutorial/distribution/opendaylight-karaf/target/assembly/./bin/karaf
+  489  cd ~/SDNHub_Opendaylight_Tutorial/distribution/opendaylight-karaf/target/assembly/
+  490  ./bin/karaf
+  491  netstat -an
+  492  system:shutdown
+  493  cd ~/SDNHub_Opendaylight_Tutorial/distribution/opendaylight-karaf/target/assembly/
+  494  ./bin/karaf
+  495  ~/SDNHub_Opendaylight_Tutorial$ mvn install -nsu
+  496   
+  497  ~/SDNHub_Opendaylight_Tutorial$ mvn install -nsu
+  498  ~/SDNHub_Opendaylight_Tutorial$ mvn install -nsu
+  499  cd SDNHub_Opendaylight_Tutorial
+  500  feature:install sdnhub-tutorial-learning-switch
+  501  sudo mn --topo single,3 --mac --switch ovsk,protocols=OpenFlow13 --controller remote
+  502  feature:install sdnhub-tutorial-learning-switch
+  503  history
+ubuntu@sdnhubvm:~[11:00]$ 
